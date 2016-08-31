@@ -13,6 +13,14 @@ version_build_next(){
   case $mode in
     major|minor|patch|beta)
       ;;
+    exact)
+      if [ -z "$last" ]; then
+        echo 'version_build_next: in exact mode, version must be specified'
+        return
+      fi
+      version=$last
+      return
+      ;;
     *)
       echo "version_build_next: invalid mode [$mode]. valid option: major,minor,patch,beta"
       return

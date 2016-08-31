@@ -44,6 +44,9 @@ test_build_next(){
   version_build_next minor 1.999.0
   assert_version 2.0.0 "minor 1.999.0"
 
+  version_build_next exact 0.0.0
+  assert_version 0.0.0 "exact 0.0.0"
+
 
   version_build_next major 1.0.0.tmp
   assert_version 2.0.0 "major 1.0.0.tmp"
