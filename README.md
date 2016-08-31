@@ -7,7 +7,7 @@ build next version string
 ```bash
 # build.sh
 . version-functions.sh
-version_build_next <major|minor|patch|beta> <LAST_VERSION>
+version_build_next <major|minor|patch|beta|exact> <LAST_VERSION>
 ```
 
 ```bash
@@ -17,6 +17,7 @@ version_build_next minor 1.0.0   # => version=1.1.0
 version_build_next patch 1.0.0   # => version=1.0.1
 version_build_next beta  1.0.0   # => version=1.999.0
 version_build_next minor 1.999.0 # => version=2.0.0
+version_build_next exact 0.0.0   # => version=0.0.0
 
 version_build_next major # => version=1.0.0
 version_build_next minor # => version=0.1.0
