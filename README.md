@@ -35,5 +35,5 @@ PATH=$PATH:/path/to/version-functions/bin
 
 ```bash
 $ cd /path/to/version-functions
-$ ./test_runner.sh
+$ ./test/runner.sh
 ```
