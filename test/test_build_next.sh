@@ -55,7 +55,7 @@ test_build_next(){
   assert_version 1.1.0 "minor 1.0.0.tmp"
 
   version_build_next patch 1.0.0.tmp
-  assert_version 1.0.1.tmp "patch 1.0.0.tmp"
+  assert_version 1.0.1 "patch 1.0.0.tmp"
 
   version_build_next beta 1.0.0.tmp
   assert_version 1.999.0 "beta 1.0.0.tmp"

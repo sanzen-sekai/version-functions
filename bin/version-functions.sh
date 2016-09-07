@@ -68,7 +68,7 @@ version_build_next(){
         case "$tip" in
           *.*)
             patch=${tip%%.*}
-            tip=${tip#*.}
+            tip=
             ;;
           *)
             patch=$tip
